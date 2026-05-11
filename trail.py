@@ -8,7 +8,7 @@ from PyQt6.QtCore import Qt, QTimer, QPointF
 
 
 class YakaTrail(QWidget):
-    TRAIL_COLOR  = (100, 180, 255)
+    TRAIL_COLOR  = (255,36,0)
     MAX_POINTS   = 40
     FADE_SECONDS = 0.35
     MAX_WIDTH    = 6.0
@@ -19,7 +19,8 @@ class YakaTrail(QWidget):
         self.setWindowFlags(
             Qt.WindowType.FramelessWindowHint |
             Qt.WindowType.WindowStaysOnTopHint |
-            Qt.WindowType.WindowTransparentForInput,
+            Qt.WindowType.WindowTransparentForInput |
+            Qt.WindowType.Tool,                        # ← hides from taskbar
         )
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setAttribute(Qt.WidgetAttribute.WA_NativeWindow)

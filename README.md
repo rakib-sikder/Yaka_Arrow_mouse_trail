@@ -1,34 +1,35 @@
 # Yaka Arrow Mouse Trail
 
-A lightweight and customizable mouse trail effect that adds an arrow-shaped visual trail following your cursor.
+A lightweight arrow mouse trail effect that renders animated arrow particles that follow the cursor.
 
 ## Features
 
-- Arrow-shaped cursor trail
-- Smooth animations
-- Customizable colors and speed
-- Lightweight and performant
-- Easy to implement
+- Arrow-shaped particle trail
+- Smooth cursor-follow animation
+- Lightweight vanilla JavaScript implementation
+- Plug-and-play setup
 
 ## Installation
 
-Clone or download this repository to your project directory.
+Clone or download this repository, then place `mouse-trail.js` in your project.
 
 ## Usage
 
-Include the script in your HTML file and initialize it:
+Include the script in your HTML file:
 
 ```html
 <script src="mouse-trail.js"></script>
 ```
 
+If your script uses initialization, call it after the script is loaded.
+
 ## Configuration
 
-Customize the trail appearance by modifying the settings in the script:
+Customize the trail by editing values directly in `mouse-trail.js`:
 
-- `color`: Trail color (hex, rgb, or color name)
-- `speed`: Animation speed
-- `size`: Arrow size
+- `color` — trail color
+- `speed` — movement/animation speed
+- `size` — arrow particle size
 
 ## License
 
